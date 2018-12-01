@@ -7,12 +7,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private val dataProvider: DataProvider = AppModule.getDataProvider()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         getUsernameButton.setOnClickListener {
-            val userName = DataProvider.instance.getUserName()
+            val userName = dataProvider.getUserName()
             Toast.makeText(this, "Username is: $userName", Toast.LENGTH_LONG).show()
         }
 
