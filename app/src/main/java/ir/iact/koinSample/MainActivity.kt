@@ -23,5 +23,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        dataProvider.setUserName("Eiliya")
     }
 }

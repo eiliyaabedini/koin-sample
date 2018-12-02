@@ -1,7 +1,13 @@
 package ir.iact.koinSample
 
-class DataProvider {
+class DataProvider(
+    private val sharedModel: SharedModel
+) {
     fun getUserName(): String {
-        return "Eiliya"
+        return sharedModel.username
+    }
+
+    fun setUserName(username: String) {
+        sharedModel.username = username
     }
 }

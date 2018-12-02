@@ -30,4 +30,6 @@ dependencies {
     // Koin library
     implementation 'org.koin:koin-android:1.0.2'
 
+    // Shared Data Access
+    implementation 'com.github.eiliyaabedini:lib-sharedDataAccess:1.0.2'
 }
